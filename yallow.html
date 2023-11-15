@@ -1,0 +1,80 @@
+
+# Criando as páginas de cores
+red_page = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Vermelha</title>
+</head>
+<body style="background-color:red;">
+
+<h2>Página Vermelha</h2>
+<a href="index.html"><button>Voltar</button></a>
+
+</body>
+</html>
+"""
+
+blue_page = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Azul</title>
+</head>
+<body style="background-color:blue;">
+
+<h2>Página Azul</h2>
+<a href="index.html"><button>Voltar</button></a>
+
+</body>
+</html>
+"""
+
+green_page = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Verde</title>
+</head>
+<body style="background-color:green;">
+
+<h2>Página Verde</h2>
+<a href="index.html"><button>Voltar</button></a>
+
+</body>
+</html>
+"""
+
+yellow_page = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Amarela</title>
+</head>
+<body style="background-color:yellow;">
+
+<h2>Página Amarela</h2>
+<a href="index.html"><button>Voltar</button></a>
+
+</body>
+</html>
+"""
+
+# Salvando os códigos HTML em arquivos separados
+with open('/mnt/data/index.html', 'w') as file:
+    file.write(html_code)
+
+with open('/mnt/data/red.html', 'w') as file:
+    file.write(red_page)
+
+with open('/mnt/data/blue.html', 'w') as file:
+    file.write(blue_page)
+
+with open('/mnt/data/green.html', 'w') as file:
+    file.write(green_page)
+
+with open('/mnt/data/yellow.html', 'w') as file:
+    file.write(yellow_page)
+
+# Retornando os caminhos dos arquivos para download
+'/mnt/data/index.html', '/mnt/data/red.html', '/mnt/data/blue.html', '/mnt/data/green.html', '/mnt/data/yellow.html'
